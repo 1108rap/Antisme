@@ -15,7 +15,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<!-- End of SEO Meta Tags -->
 
 	<!-- Icon n' Title -->
-	<link rel="icon" type="image/png" href="">
+	<link rel="icon" type="image/png" href="<?= base_url('assets/img/favicon.png') ?>">
 	<title>Antime Outsourcing</title>
 	<!-- End of Icon n' Title -->
 
