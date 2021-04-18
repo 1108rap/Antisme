@@ -25,7 +25,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
 </head>
 
 <body>
-
+	<!-- Navigation Bar -->
+	<!-- End of Navigation Bar -->
 </body>
 
 </html>
