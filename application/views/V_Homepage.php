@@ -26,6 +26,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 <body>
 	<!-- Navigation Bar -->
+	<nav class="navbar">
+		<div class="logo">
+			<h1 class="logotext">asjnasjkasdm</h1>
+		</div>
+		<ul class="nav">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</nav>
 	<!-- End of Navigation Bar -->
 </body>
 
