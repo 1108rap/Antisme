@@ -31,14 +31,24 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <body>
 	<!-- Navigation Bar -->
 	<nav class="navbar">
-		<div class="logo">
-			<h1 class="logotext">asjnasjkasdm</h1>
-		</div>
+		<a class="navbar-brand" href="#">
+			<img src="<?= base_url('assets/img/favicon.png') ?>" alt="Antisme Outsourcing" width="30" height="30">
+		</a>
 		<ul class="nav">
-			<li>1</li>
-			<li>2</li>
-			<li>3</li>
+			<li class="nav-item">
+				<a href="" class="nav-link">Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="" class="nav-link">Price</a>
+			</li>
+			<li class="nav-item">
+				<a href="" class="nav-link">Request</a>
+			</li>
+			<li class="nav-item">
+				<a href="" class="nav-link">Contact</a>
+			</li>
 		</ul>
+		<button class="btn btn-outline-info">Login</button>
 	</nav>
 	<!-- End of Navigation Bar -->
 
