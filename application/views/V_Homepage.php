@@ -22,6 +22,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 	<!-- Style n' CSS -->
 	<link rel="stylesheet" href="<?= base_url('assets/css/antisme.css') ?>">
 	<!-- End of Style n' CSS -->
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+	<!-- End of Bootstrap CSS -->
 </head>
 
 <body>
@@ -37,6 +41,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		</ul>
 	</nav>
 	<!-- End of Navigation Bar -->
+
+	<!-- Script -->
+	<?php $this->load->view('_parts/Script.php'); ?>
+	<!-- End of Script -->
 </body>
 
 </html>
