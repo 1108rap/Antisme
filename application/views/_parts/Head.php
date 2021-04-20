@@ -9,7 +9,7 @@
 
 <!-- Icon n' Title -->
 <link rel="icon" type="image/png" href="<?= base_url('assets/img/favicon.png') ?>">
-<title>Antime Outsourcing</title>
+<title>Antisme Outsourcing</title>
 <!-- End of Icon n' Title -->
 
 <!-- Style n' CSS -->
