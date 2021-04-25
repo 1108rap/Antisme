@@ -7,10 +7,14 @@
 <meta name="description" content="Management application for outsourcing system">
 <!-- End of SEO Meta Tags -->
 
-<!-- Icon n' Title -->
+<!-- Head Icon n' Title -->
 <link rel="icon" type="image/png" href="<?= base_url('assets/img/favicon.png') ?>">
 <title>Antisme Outsourcing</title>
-<!-- End of Icon n' Title -->
+<!-- End of Head Icon n' Title -->
+
+<!-- Icon CSS -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- End of Icon CSS -->
 
 <!-- Style n' CSS -->
 <link rel="stylesheet" href="<?= base_url('assets/css/antisme.css') ?>">
