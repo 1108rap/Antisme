@@ -1,0 +1,126 @@
+/**************************
+Content Of List:
+
+- General Styles
+- Navigation
+- Header
+**************************/
+
+/**************************/
+/*     General Styles     */
+/**************************/
+.btn {
+    box-sizing: border-box;
+    border-width: 2px;
+    font-size: 12px;
+    font-weight: 600;
+    padding: .5rem 18px;
+    line-height: 1.75;
+    text-transform: uppercase;
+    transition: all .15s linear;
+}
+
+.btn-round {
+    border-radius: 30px;
+}
+
+.btn-outline-primary {
+    border-color: #95d1e8;
+    color: #95d1e8;
+    opacity: 1;
+}
+
+.btn-outline-primary:hover {
+    background-color: #90d4ed!important;
+    color: hsla(0, 0%, 100%, .8);
+    border-color: #90d4ed!important;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 6px 10px -4px rgb(0, 0, 0 / 15%) ;
+    background-color: #e7e7e7;
+    color: #333333;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    border: 0 none;
+    transition: transform .3s cubic-bezier(.34,2,.6,1),box-shadow .2s ease;
+}
+
+.card .card-body {
+    position: relative;
+    z-index: 2;
+    min-height: 280px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.card .card-footer {
+    padding: 15px;
+    background: transparent;
+    border-top: 0 none;
+}
+
+.card .card-body .card-footer {
+    padding: 0;
+}
+.card .card-icon i {
+    font-size: 40px;
+    width: 105px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    height: 105px;
+    line-height: 105px;
+}
+
+/**************************/
+/*       Navigation       */
+/**************************/
+
+.navbar-brand img {
+width: 30px;
+height: 30px;
+}
+
+.nav a {
+    color: #000000;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    color: #95d1e8;
+}
+
+/**************************/
+/*         Header         */
+/**************************/
+.header {
+    min-height: 100vh;
+    max-height: 999px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.header .header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.header .content-text {
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+/* End of Header */

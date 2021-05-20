@@ -13,13 +13,18 @@
 <!-- End of Head Icon n' Title -->
 
 <!-- Icon CSS -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
 <!-- End of Icon CSS -->
 
-<!-- Style n' CSS -->
-<link rel="stylesheet" href="<?= base_url('assets/css/antisme.css') ?>">
-<!-- End of Style n' CSS -->
+<!-- Google font -->
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Serif+Pro:300,400,600,700&amp;lang=en" />
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+<!-- End of Google font -->
 
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 <!-- End of Bootstrap CSS -->
+
+<!-- Style n' CSS -->
+<link rel="stylesheet" href="<?= base_url('assets/css/antisme.css') ?>">
+<!-- End of Style n' CSS -->

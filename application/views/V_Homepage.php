@@ -12,52 +12,79 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 <body>
 	<!-- Navbar -->
-	<div class="navbar-wrapper">
-		<div class="navbar">
-			<ul class="items-wrapper">
-				<li class="navbar-items">
-					<span class="material-icons-round">home</span>
-				</li>
-				<li class="navbar-items">
-					<span class="material-icons-round">local_offer</span>
-				</li>
-				<li class="navbar-items">
-					<span class="material-icons-round">stars</span>
-				</li>
-				<li class="navbar-items">
-					<span class="material-icons-round">phone</span>
-				</li>
-				<li class="navbar-items">
-					<span class="material-icons-round">settings</span>
-				</li>
-			</ul>
-		</div>
-	</div>
+	<nav class="navbar fixed-top navbar-transparent">
+		<a href="" class="navbar-brand">
+			<img src="<?= base_url('assets/img/favicon.png') ?>" alt="Company logo">
+		</a>
+		<ul class="nav">
+			<li class="nav-item">
+				<a href="#header" class="nav-link">Home</a>
+			</li>
+			<li class="nav-item">
+				<a href="#service" class="nav-link">Service</a>
+			</li>
+			<li class="nav-item">
+				<a href="#price" class="nav-link">Pricing</a>
+			</li>
+		</ul>
+		<form action="" class="form-inline">
+			<button class="btn btn-sm btn-outline-primary btn-round">Login</button>
+		</form>
+	</nav>
 	<!-- End of Navbar -->
 
-	<!-- Content Wrapper -->
-	<div class="wrapper">
-		<!-- Header -->
-		<div class="header" id="header">
-			<div class="container logo-container">
-				<a href="<?= site_url() ?>" class="logo-brand">Antisme</a>
+	<!-- Header -->
+	<div class="header" id="header">
+		<div class="header-content">
+			<div class="content-text">
+				<h1 class="title">Antisme Outsourcing</h1>
+				<h3 class="text-category">perusahaan outsourcing</h3>
 			</div>
-			<div class="container header-content">
+		</div>
+	</div>
+	<!-- End of Header -->
+
+	<!-- Content -->
+	<div class="content">
+		<div class="services" id="service">
+			<div class="container">
 				<div class="row justify-content-center">
-					<div class="col-6">
-						<img class="header-img" src="<?= base_url('assets/img/Header-image.svg') ?>" alt="Header">
-					</div>
-					<div class="col-6">
-						<div class="text-container">
-							<h3>klasdklasmdksam</h3>
+					<div class="col-md-4">
+						<div class="card">
+							<div class="card-body">
+								<h6 class="card-category">Online network</h6>
+								<div class="card-icon">
+									<i class="material-icons-round">rss_feed</i>
+								</div>
+								<p class="card-description">
+									asdkasdklaskdmaskdm,cklmasoiklwmkcaklmcsakmasdklklasmdklmasdkdfkms,adkjikhfjasdkmkasmdklam
+								</p>
+								<div class="card-footer">
+									<a href="" class="btn btn-danger btn-round">
+										Learn more...
+									</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- End of Header -->
+		<div class="price" id="price">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-3">
+						<div class="card">
+							<div class="card-body">
+								<h6 class="card-category"></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-	<!-- End of Content Wrapper -->
+	<!-- End of Content -->
 
 	<!-- Script -->
 	<?php $this->load->view('_parts/Script.php'); ?>
