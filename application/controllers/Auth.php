@@ -19,6 +19,7 @@ class Auth extends CI_Controller
 	public $template;
 	public $session;
 	public $fungsi;
+	public $M_Get;
 
 	public function index()
 	{
@@ -27,27 +28,57 @@ class Auth extends CI_Controller
 		$this->load->view('V_Auth');
 	}
 
+	// public function loginprocess()
+	// {
+	// 	$post = $this->input->post(null, TRUE);
+	// 	if (isset($post['login'])) {
+	// 		$this->load->model('M_Get');
+	// 		$query = $this->M_Get->datalogin($post);
+	// 		if ($query->num_rows() > 0) {
+
+	// 			$row = $query->row();
+	// 			// $params['username'] = $row->Username;
+	// 			// $params['level'] = $row->Level;
+	// 			if (isset($row->Username) && isset($row->Level)) {
+	// 				$params['username'] = $row->Username;
+	// 				$params['level'] = $row->Level;
+	// 				$this->session->set_userdata($params);
+	// 				echo "<script>window.location='" . site_url('Dashboard') . "';</script>";
+	// 			} else {
+	// 				echo "<script>alert('Login failed: Invalid data.');</script>";
+	// 			}
+	// 			$this->session->set_userdata($params);
+	// 			echo "<script>
+	// 			window.location='" . site_url('Dashboard') . "';</script>";
+	// 		} else {
+	// 			echo "<script> alert('login failure, Try login again...');
+	// 			window.location='" . site_url('Auth') . "';</script>";
+	// 		}
+	// 	}
+	// }
+
 	public function loginprocess()
 	{
-
 		$post = $this->input->post(null, TRUE);
 		if (isset($post['login'])) {
 			$this->load->model('M_Get');
 			$query = $this->M_Get->datalogin($post);
 			if ($query->num_rows() > 0) {
-
 				$row = $query->row();
-				$params['username'] = $row->Username;
-				$params['level'] = $row->Level;
-				$this->session->set_userdata($params);
-				echo "<script>
-				window.location='" . site_url('Dashboard') . "';</script>";
+				if (isset($row->Username) && isset($row->Level)) {
+					$params['username'] = $row->Username;
+					$params['level'] = $row->Level;
+					$this->session->set_userdata($params);
+					echo "<script>window.location='" . site_url('Dashboard') . "';</script>";
+				} else {
+					echo "<script>alert('Login gagal: Data tidak valid.');</script>";
+				}
 			} else {
-				echo "<script> alert('login failure, Try login again...');
-				window.location='" . site_url('Auth') . "';</script>";
+				echo "<script>alert('Login gagal, coba login kembali...');</script>";
 			}
 		}
 	}
+
 
 	public function logout()
 	{

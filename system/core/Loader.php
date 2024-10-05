@@ -68,6 +68,8 @@ class CI_Loader
 	public $template;
 	public $session;
 	public $fungsi;
+	public $M_Get;
+
 
 	// All these are set automatically. Don't mess with them.
 	/**

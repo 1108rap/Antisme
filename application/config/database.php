@@ -76,10 +76,10 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => '127.0.0.1',
-	'username' => 'postgres',
-	'password' => '0000',
+	'username' => 'root',
+	'password' => '',
 	'database' => 'antisme',
-	'dbdriver' => 'postgre',
+	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
